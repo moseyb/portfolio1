@@ -54,3 +54,7 @@ See the full terms in [LICENSE.txt](LICENSE.txt).
 ## Project link
 
 Project Link: [https://github.com/moseyb/portfolio1](https://github.com/moseyb/portfolio1)
+## Collaborator
+- **Name:** Joseph Ndikumana
+- **GitHub:** [@jndikumana35-dotcom](https://github.com/jndikumana35-dotcom)
+- **Role:** Collaborator, responsible for the Awards, Contacts and References sections
