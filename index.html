@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>My Portfolio: Moise Byiringiro</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="wrap bar">
+    <a class="logo" id="logo" href="#home">MB</a>
+    <nav aria-label="Main menu">
+      <a id="nav-home" href="#home" class="active">Home</a>
+      <a id="nav-services" href="#services">Services</a>
+      <a id="nav-about" href="#about">About me</a>
+      <a id="nav-portfolio" href="#portfolio">Portfolio</a>
+      <a id="nav-contact" href="#contact">Contact me</a>
+    </nav>
+    <a id="btn-hire-top" class="btn small" href="#contact">Hire Me</a>
+  </div>
+</header>
+
+<main>
+  <section id="home">
+    <div class="wrap hero">
+      <div>
+        <p class="hi">Hi I am</p>
+        <p class="name">Moise Byiringiro</p>
+        <h1>Embedded Systems Developer</h1>
+        <div class="social">
+          <a id="social-linkedin" href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn">in</a>
+          <a id="social-github" href="https://github.com/moseyb" target="_blank" rel="noopener" aria-label="GitHub">gh</a>
+          <a id="social-email" href="mailto:you@example.com" aria-label="Email">@</a>
+        </div>
+        <div class="cta">
+          <a id="btn-hire" class="btn" href="#contact">Hire Me</a>
+          <a id="btn-cv" class="btn ghost" href="cv.pdf" download>Download CV</a>
+        </div>
+        <div class="stats">
+          <div class="stat"><b>6</b><span>Projects done</span></div>
+          <div class="stat"><b>3</b><span>Focus areas</span></div>
+          <div class="stat"><b>2026</b><span>Student year</span></div>
+        </div>
+      </div>
+      <div class="photo">
+        <span class="initials">MB</span>
+        <img src="image/project1.jpeg" alt="Profile Image" onerror="this.remove()">
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="block">
+    <div class="wrap">
+      <h2>Services</h2>
+      <p class="lead">What I can build for you.</p>
+      <div class="grid">
+        <div class="card"><h3>Embedded systems</h3><p>Programming microcontrollers with sensors and actuators.</p></div>
+        <div class="card"><h3>Robotics and automation</h3><p>Robots and automated systems that solve real-world problems.</p></div>
+        <div class="card"><h3>IoT solutions</h3><p>Connected devices that collect and send data.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="block">
+    <div class="wrap">
+      <h2>About me</h2>
+      <p class="lead">Welcome to my Embedded Systems Portfolio. I am passionate about electronics, programming, robotics, and automation, with a strong interest in developing embedded solutions that solve real-world problems. Here you will find my projects, experiments, and technical work involving microcontrollers, sensors, actuators, robotics, and IoT. Each project represents an opportunity to learn, experiment, and turn an idea into a working system.</p>
+    </div>
+  </section>
+
+  <section id="portfolio" class="block">
+    <div class="wrap">
+      <h2>Portfolio</h2>
+      <p class="lead">My projects, in two groups.</p>
+      <div class="grid">
+        <div class="card" id="projects-1">
+          <h3>Projects 1</h3>
+          <ul>
+            <li><a id="project-1" href="project1.html">Project 1: [Project Name]</a></li>
+            <li><a id="project-2" href="project2.html">Project 2: [Project Name]</a></li>
+            <li><a id="project-3" href="project3.html">Project 3: [Project Name]</a></li>
+          </ul>
+        </div>
+        <div class="card" id="projects-2">
+          <h3>Projects 2</h3>
+          <ul>
+            <li><a id="project-4" href="project1.html">Project 1: [Project Name]</a></li>
+            <li><a id="project-5" href="project2.html">Project 2: [Project Name]</a></li>
+            <li><a id="project-6" href="project3.html">Project 3: [Project Name]</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="block">
+    <div class="wrap">
+      <h2>Contact me</h2>
+      <p class="lead">Have a project in mind? Get in touch.</p>
+      <div class="contact-list">
+        <a id="contact-email" href="mailto:you@example.com">you@example.com</a>
+        <a id="contact-github" href="https://github.com/moseyb" target="_blank" rel="noopener">github.com/moseyb</a>
+        <a id="contact-linkedin" href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn profile</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>&copy; 2026 Moise Byiringiro. All rights reserved.</footer>
+
+<script>
+const links=document.querySelectorAll('nav a');
+const io=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){links.forEach(a=>a.classList.toggle('active',a.getAttribute('href')==='#'+e.target.id))}})},{rootMargin:'-40% 0px -55% 0px'});
+links.forEach(a=>{const el=document.getElementById(a.getAttribute('href').slice(1));if(el)io.observe(el)});
+</script>
+</body>
+</html>
